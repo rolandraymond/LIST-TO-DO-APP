@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="CSS/style.css">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <title>Register</title>
+ </head>
+
+ <body>
+     <div class="wrapper">
+         <form name="Form" method="POST" onsubmit="return CheckFormMethod(event);">
+             <h1>Create Account</h1>
+             <div class="input-box">
+                 <input name="User_Name" type="text" placeholder="User_Name" required>
+                 <i class='bx bx-user'></i>
+             </div>
+             <div class="input-box">
+                 <input name="password" type="password" placeholder="password" required>
+                 <i class='bx bxs-lock-alt'></i>
+             </div>
+             <div class="input-box">
+                 <input name="repassword" type="password" placeholder="Re-type Password" required>
+                 <i class='bx bxs-lock-alt'></i>
+             </div>
+             <button type="submit" value="submit" class="bin">Create</button>
+             <div id="error-msg" class="error">
+             </div>
+
+         </form>
+
+     </div>
+     <script src="JS/Create_Account.js"></script>
+ </body>
+
+ </html>
